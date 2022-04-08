@@ -72,13 +72,13 @@ Sayings = "";
 			var now = new Date();
 			var hours = now.getHours();
 			if (hours >= 17 || hours <= 2){
-			Sayings += "<span class='text-light'>Selamat malam 🌚</span>"
+			Sayings += "<span class='text-light'>Selamat malam </span>"
 			} else if (hours >= 3 && hours <= 10){
-			Sayings += "<span class='text-info'>Selamat pagi 🌝</span>"
+			Sayings += "<span class='text-info'>Selamat pagi </span>"
 			} else if (hours >= 11 && hours <= 14){
-			Sayings += "<span class='text-warning'>Selamat Siang 🌞</span>"
+			Sayings += "<span class='text-warning'>Selamat Siang </span>"
 			} else if (hours >= 13 && hours <= 16){
-			Sayings += "<span class='text-success'>Selamat Sore 🌜</span>"
+			Sayings += "<span class='text-success'>Selamat Sore </span>"
 			}
 document.getElementById("Ucapan").innerHTML = Sayings;
 
@@ -93,8 +93,8 @@ window.setTimeout("waktu()", 1000);
 		document.getElementById("Clock").innerHTML = jam +" : "+ menit +" : "+ detik +" WIB";
 	}
 
-// Count Down Idul Adha
-var countDownDate = new Date("July 19, 2021 00:00:00").getTime();
+// Count Down Idul Fitri
+var countDownDate = new Date("Mei 29, 2022 00:00:00").getTime();
 
 var x = setInterval(function() {
   var now = new Date().getTime();
@@ -105,11 +105,11 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
-  document.getElementById("IdulAdha").innerHTML = days + " Days " + hours + " Hours "
+  document.getElementById("IdulFitri").innerHTML = days + " Days " + hours + " Hours "
   + minutes + " Min " + seconds + " Sec ";
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("IdulAdha").innerHTML = "Selamat Hari Raya Idul Adha ";
+    document.getElementById("IdulFitri").innerHTML = "Selamat Hari Raya Idul Fitri";
   }
 }, 1000);
 
@@ -136,7 +136,7 @@ var batteryLevel = document.getElementById("batteryLevel");
 			};
 			});
 
-	const Image = ["./../images/logo1.png","./../images/logo2.png","./../images/logo3.jpeg"]
+	const Image = ["./../images/logo1.png","./../images/logo2.png","./../images/logo3.png"]
 	const randImage = Image[Math.floor(Math.random() * Image.length)];
 
 (function($) {
